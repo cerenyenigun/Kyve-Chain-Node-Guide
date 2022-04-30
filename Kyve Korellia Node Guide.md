@@ -183,7 +183,7 @@ sudo systemctl start kyved
 sudo systemctl stop kyved
 ```
 ```
-cd 
+cd
 ```
 ```
 cd .kyve/config
@@ -201,7 +201,7 @@ sudo systemctl start kyved
  **Checking the logs**
  
 ``` 
-sudo systemctl start kyved
+journalctl -u kyved -f -o cat
 ```
 
 - **You should get an output like this**
@@ -209,11 +209,16 @@ sudo systemctl start kyved
 ![alt text](https://i.hizliresim.com/f813lbg.png)
 
 
-**Sync status**
+**Sync status (enter this code on another page in terminal)**
 
 ```
 curl -s localhost:26657/status
 ```
+- **You will get this output**
+
+![alt text](https://i.hizliresim.com/c3rvi4s.png)
+
+- **atching-up: Wait until False (max 15 min)**
 
 
 
