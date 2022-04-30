@@ -236,20 +236,29 @@ curl -s localhost:26657/status
 kyved query bank balances $KYVE_ADDR
 ```
 
+![alt text](https://i.hizliresim.com/mwt1alh.png)
+
+
 **Creating a validator**
 
 ```
-kyved tx staking create-validator --yes \ 
---amount 20000000000tkyve \ 
---moniker $KYVE_MONIKER \ 
---commission-rate "0.10" \ 
---commission-max-rate "0.20" \ 
---commission-max-change-rate "0.01" \ 
---min-self-delegation "1" \ 
---pubkey "$(kyved tendermint show-validator)" \ 
---from $KYVE_WALLET \ 
---chain-id korellia
+kyved tx staking create-validator --yes \
+ --amount 20000000000tkyve \
+ --moniker $KYVE_MONIKER \
+ --commission-rate "0.10" \
+ --commission-max-rate "0.20" \
+ --commission-max-change-rate "0.01" \
+ --min-self-delegation "1" \
+ --pubkey "$(kyved tendermint show-validator)" \
+ --from $KYVE_WALLET \
+ --chain-id korellia
 ```
+
+**You should get the output in the picture**
+
+
+![alt text](https://i.hizliresim.com/lb9r6du.png)
+
 
 **Enter this code if Validator is Jailed**
 
