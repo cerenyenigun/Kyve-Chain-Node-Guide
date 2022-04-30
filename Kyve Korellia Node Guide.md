@@ -221,6 +221,10 @@ curl -s localhost:26657/status
 - **Catching-up: Wait until False (max 15 min)**
 
 
+![alt text](https://i.hizliresim.com/mkeqwhc.png)
+
+
+
 
 
 
