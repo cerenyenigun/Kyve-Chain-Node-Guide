@@ -171,7 +171,7 @@ cd .kyve/data
 wget https://snapshots.bitszn.com/snapshots/kyve/kyve.tar
 ```
 ```
-tar -xf kyve.tar 
+tar -xf kyve.tar
 ```
 ```
 sudo systemctl start kyved
