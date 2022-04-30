@@ -1,1 +1,0 @@
-# Kyve-Chain-Node-Guide
