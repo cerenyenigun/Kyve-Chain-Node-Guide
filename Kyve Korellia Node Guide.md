@@ -204,12 +204,12 @@ sudo systemctl start kyved
 sudo systemctl start kyved
 ```
 
-- **You should get an output like this **
+- **You should get an output like this**
 
 ![alt text](https://i.hizliresim.com/f813lbg.png)
 
 
-**Sync status **
+**Sync status**
 
 ```
 curl -s localhost:26657/status
