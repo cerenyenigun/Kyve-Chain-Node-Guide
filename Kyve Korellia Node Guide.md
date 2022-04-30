@@ -208,6 +208,8 @@ journalctl -u kyved -f -o cat
 
 ![alt text](https://i.hizliresim.com/f813lbg.png)
 
+![alt text](https://i.hizliresim.com/equqsxf.png)
+
 
 **Sync status (enter this code on another page in terminal)**
 
@@ -217,8 +219,6 @@ curl -s localhost:26657/status
 - **You will get this output**
 
 ![alt text](https://i.hizliresim.com/c3rvi4s.png)
-
-![alt text](https://i.hizliresim.com/equqsxf.png)
 
 
 - **Catching-up: Wait until False (max 15 min)**
