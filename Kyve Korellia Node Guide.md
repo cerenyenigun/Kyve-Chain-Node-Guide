@@ -186,7 +186,7 @@ cd
 cd .kyve/config
 ```
 ```
-wget https://snapshots.bitszn.com/snapshots/kyve/kyve.tar
+wget https://snapshots.bitszn.com/snapshots/kyve/addrbook.json
 ```
 ```
 rm addrbook.json
