@@ -25,12 +25,48 @@ chmod +x chaind
 ```
 ```
 mv chaind /usr/local/bin/kyved
-
 ```
 
 **After that, we will set the moniker and the wallet name.**
 
 - **Just YOUR_MONIKER_NAME and YOUR_WALLET_NAME change it**
+
+```
+KYVE_CHAIN="korellia"
+
+KYVE_MONIKER="YOUR_MONIKER_NAME"
+
+KYVE_WALLET="YOUR_WALLET_NAME"
+```
+
+**Add variables to .bash_profile**
+```
+echo 'export KYVE_CHAIN='${KYVE_CHAIN} >> $HOME/.bash_profile
+```
+```
+echo 'export KYVE_MONIKER='${KYVE_MONIKER} >> $HOME/.bash_profile
+```
+```
+echo 'export KYVE_WALLET='${KYVE_WALLET} >> $HOME/.bash_profile
+```
+```
+source $HOME/.bash_profile
+```
+
+**Enter the code to start**
+
+```
+kyved init $KYVE_MONIKER --chain-id $KYVE_CHAIN
+```
+
+- **You should get ibr output as in the picture**
+
+![alt text](https://i.hizliresim.com/akqelp4.png)
+
+
+
+
+
 
 
 
