@@ -64,6 +64,25 @@ kyved init $KYVE_MONIKER --chain-id $KYVE_CHAIN
 ![alt text](https://i.hizliresim.com/akqelp4.png)
 
 
+**Genesis file download and migration**
+
+```
+wget https://github.com/KYVENetwork/chain/releases/download/v0.0.1/genesis.json
+```
+```
+mv genesis.json ~/.kyve/config/genesis.json
+```
+
+**Seed Loading**
+
+```
+seeds="e56574f922ff41c68b80700266dfc9e01ecae383@18.156.198.41:26656"
+```
+```
+sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/" $HOME/.kyve/config/config.toml
+```
+
+
 
 
 
