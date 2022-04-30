@@ -82,6 +82,24 @@ seeds="e56574f922ff41c68b80700266dfc9e01ecae383@18.156.198.41:26656"
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/" $HOME/.kyve/config/config.toml
 ```
 
+**Creating a wallet**
+
+- **Don't forget your mnemonics and wallet password!**
+```
+kyved keys add $KYVE_WALLET
+```
+
+- **After you set your wallet password, you will receive a printout like this. Save your mnemonics in this output**
+
+![alt text](https://i.hizliresim.com/hbgbyf1.png)
+
+**If you already have a wallet, enter the code below and then enter the wallet mnemonics**
+- 
+```
+kyved keys add $KYVE_WALLET --recover
+```
+
+
 
 
 
