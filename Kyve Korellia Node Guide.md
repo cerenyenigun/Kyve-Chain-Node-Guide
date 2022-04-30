@@ -221,7 +221,44 @@ curl -s localhost:26657/status
 - **Catching-up: Wait until False (max 15 min)**
 
 
+- **Request tokens on the KYVE Discord Faucet channel. Will send 20 KYVE (example picture below)**
+
+
 ![alt text](https://i.hizliresim.com/qibls3h.png)
+
+
+- **Balance Check**
+
+```
+kyved query bank balances $KYVE_ADDR
+```
+
+**Creating a validator**
+
+```
+kyved tx staking create-validator --yes \ 
+--amount 20000000000tkyve \ 
+--moniker $KYVE_MONIKER \ 
+--commission-rate "0.10" \ 
+--commission-max-rate "0.20" \ 
+--commission-max-change-rate "0.01" \ 
+--min-self-delegation "1" \ 
+--pubkey "$(kyved tendermint show-validator)" \ 
+--from $KYVE_WALLET \ 
+--chain-id korellia
+```
+
+**Enter this code if Validator is Jailed**
+
+```
+kyved tx slashing unjail --chain-id korellia --from $KYVE_WALLET
+```
+
+**You can check your validator from this site.**
+
+https://kyve.explorers.guru/validators
+
+**Thank You..**
 
 
 
