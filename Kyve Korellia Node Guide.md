@@ -271,7 +271,7 @@ kyved tx slashing unjail --chain-id korellia --from $KYVE_WALLET
 https://kyve.explorers.guru/validators
 
 
-![alt text](https://i.hizliresim.com/lb9r6du.png)
+![alt text](https://i.hizliresim.com/mkmo496.png)
 
 
 **Thank You..**
