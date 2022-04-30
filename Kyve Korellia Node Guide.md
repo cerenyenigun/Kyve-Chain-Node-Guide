@@ -2,7 +2,7 @@
 
 **Minimum requirements**
 
--- **3vCPU**
--- **4GB RAM**
--- **80GB DİSK**
--- **Ubuntu 20.04+**
+- **3vCPU**
+- **4GB RAM**
+- **80GB DİSK**
+- **Ubuntu 20.04+**
