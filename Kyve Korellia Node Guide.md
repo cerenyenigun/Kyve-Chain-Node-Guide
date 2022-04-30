@@ -218,6 +218,9 @@ curl -s localhost:26657/status
 
 ![alt text](https://i.hizliresim.com/c3rvi4s.png)
 
+![alt text](https://i.hizliresim.com/equqsxf.png)
+
+
 - **Catching-up: Wait until False (max 15 min)**
 
 
