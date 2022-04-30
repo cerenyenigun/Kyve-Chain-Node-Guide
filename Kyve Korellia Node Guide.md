@@ -153,7 +153,7 @@ sudo systemctl enable kyved
 sudo systemctl restart kyved
 ```  
 
-**Snapshot Operations**
+**Snapshot Operations (this may take some time)**
 
 ```
 sudo systemctl stop kyved
@@ -174,21 +174,26 @@ tar -xf kyve.tar
 sudo systemctl start kyved
 ```
 
-
- **Addrbook İşlemleri**
+ **Addrbook Transactions**
+ 
 ```
 sudo systemctl stop kyved
-
+```
+```
 cd 
-
+```
+```
 cd .kyve/config
-
+```
+```
+wget https://snapshots.bitszn.com/snapshots/kyve/kyve.tar
+```
+```
 rm addrbook.json
-
-wget https://snapshots.bitszn.com/snapshots/kyve/addrbook.json 
-
+```
+```
 sudo systemctl start kyved
-```                                         
+```                                        
 
 
 
