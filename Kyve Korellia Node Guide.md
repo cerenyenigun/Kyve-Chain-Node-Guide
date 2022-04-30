@@ -93,14 +93,102 @@ kyved keys add $KYVE_WALLET
 
 ![alt text](https://i.hizliresim.com/hbgbyf1.png)
 
-**If you already have a wallet, enter the code below and then enter the wallet mnemonics**
-- 
+- **If you already have a wallet, enter the code below and then enter the wallet mnemonics**
+
 ```
 kyved keys add $KYVE_WALLET --recover
 ```
 
+- **Adding wallet address to variable (it will ask for wallet password)**
+
+```
+KYVE_ADDR=$(kyved keys show $KYVE_WALLET -a)
+```
+
+- **Add variable to .bash_profile**
+
+```
+echo 'export KYVE_ADDR='${KYVE_ADDR} >> $HOME/.bash_profile
+```
+```
+source $HOME/.bash_profile
+```
+
+**Creating a service file**
+
+```
+tee $HOME/kyved.service > /dev/null <<EOF
+[Unit]
+Description=kyve
+After=network.target
+
+[Service]
+Type=simple
+User=$USER
+ExecStart=$(which kyved) start
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+- **Move the service file to the working folder**
+
+```
+sudo mv $HOME/kyved.service /etc/systemd/system/
+```
+
+- **Run the File**
+
+```
+sudo systemctl daemon-reload
+```
+```
+sudo systemctl enable kyved
+```
+```
+sudo systemctl restart kyved
+```  
+
+**Snapshot Operations**
+
+```
+sudo systemctl stop kyved
+```
+```
+rm -r .kyve/data/*
+```
+```
+cd .kyve/data
+```
+```
+wget https://snapshots.bitszn.com/snapshots/kyve/kyve.tar
+```
+```
+tar -xf kyve.tar 
+```
+```
+sudo systemctl start kyved
+```
 
 
+ **Addrbook İşlemleri**
+```
+sudo systemctl stop kyved
+
+cd 
+
+cd .kyve/config
+
+rm addrbook.json
+
+wget https://snapshots.bitszn.com/snapshots/kyve/addrbook.json 
+
+sudo systemctl start kyved
+```                                         
 
 
 
