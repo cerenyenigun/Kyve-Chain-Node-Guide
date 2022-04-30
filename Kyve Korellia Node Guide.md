@@ -159,6 +159,9 @@ sudo systemctl restart kyved
 sudo systemctl stop kyved
 ```
 ```
+cd
+```
+```
 rm -r .kyve/data/*
 ```
 ```
@@ -186,14 +189,31 @@ cd
 cd .kyve/config
 ```
 ```
-wget https://snapshots.bitszn.com/snapshots/kyve/addrbook.json
-```
-```
 rm addrbook.json
 ```
 ```
+wget https://snapshots.bitszn.com/snapshots/kyve/addrbook.json
+```
+```
 sudo systemctl start kyved
-```                                        
+```   
+
+ **Checking the logs**
+ 
+``` 
+sudo systemctl start kyved
+```
+
+- **You should get an output like this **
+
+![alt text](https://i.hizliresim.com/f813lbg.png)
+
+
+**Sync status **
+
+```
+curl -s localhost:26657/status
+```
 
 
 
