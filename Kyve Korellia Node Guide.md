@@ -15,7 +15,7 @@ sudo apt update && sudo apt upgrade -y
 apt install wget tar curl jq -y
 ```
 ```
-wget https://github.com/KYVENetwork/chain/releases/download/v0.3.0/chain_linux_amd64.tar.gz
+wget https://github.com/KYVENetwork/chain/releases/download/v0.0.1/chain_linux_amd64.tar.gz
 ```
 ```
 tar -xvzf chain_linux_amd64.tar.gz
@@ -153,47 +153,14 @@ sudo systemctl enable kyved
 sudo systemctl restart kyved
 ```  
 
-**Snapshot Operations (this may take some time)**
-
-```
-sudo systemctl stop kyved
-```
-```
-cd
-```
-```
-rm -r .kyve/data/*
-```
-```
-cd .kyve/data
-```
-```
-wget https://snapshots.bitszn.com/snapshots/kyve/kyve.tar
-```
-```
-tar -xf kyve.tar
-```
-```
-sudo systemctl start kyved
-```
-
- **Addrbook Transactions**
+ **Addrbook Transactions (Add seeds from pin messages in Telegram) https://t.me/aptos_tr**
+ 
+ **Connect to the terminal with winscp or cyberduck. Open addrbook.json to root/.kyve/config directory and add seeds into it.**
  
 ```
 sudo systemctl stop kyved
 ```
-```
-cd
-```
-```
-cd .kyve/config
-```
-```
-rm addrbook.json
-```
-```
-wget https://snapshots.bitszn.com/snapshots/kyve/addrbook.json
-```
+
 ```
 sudo systemctl start kyved
 ```   
