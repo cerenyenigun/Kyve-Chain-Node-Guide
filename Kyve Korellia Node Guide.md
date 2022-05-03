@@ -1,5 +1,7 @@
 ![alt text](https://i.hizliresim.com/9fa8ruc.png)
 
+Wallet Address:kyve1p7v2gea3vjsxcqk37yumw8d0tx5dd3cjzrxwjx
+
 **Minimum requirements**
 
 - **2vCPU**
