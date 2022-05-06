@@ -155,7 +155,7 @@ sudo systemctl enable kyved
 sudo systemctl restart kyved
 ```  
 
- **Addrbook Transactions (Add seeds from pin messages in Telegram) https://t.me/aptos_tr**
+ **Addrbook Transactions (Add seeds from pin messages in Telegram) https://t.me/kyve_tr**
  
  **Connect to the terminal with winscp or cyberduck. Open addrbook.json to root/.kyve/config directory and add seeds into it.**
  
